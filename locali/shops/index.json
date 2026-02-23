@@ -1,0 +1,29 @@
+[
+  {
+    "name": "ISOLA DELLE ROse",
+    "city": "BRESCIA",
+    "folder": "IsolaDelleRose",
+    "description": "L’Isola delle Rose propone pasticceria e focacceria per soddisfare chi ama il buon gusto, includendo prodotti classici e bontà innovative per chi necessita di alimenti senza glutine, senza latte o chetogenici.",
+    "address": "Viale Italia, 9a, 25126 Brescia BS",
+    "adesione": "Febbraio 2026",
+    "images": 5
+  },
+  {
+    "name": "Forneria Zoli",
+    "city": "ROVATO",
+    "folder": "ForneriaZoli",
+    "description": "Coming soon...",
+    "address": "Via G. Mazzini, 7/c, 25038 Rovato BS",
+    "adesione": "Febbraio 2026",
+    "images": 5
+  },
+  {
+    "name": "Miss Mais - Gluten Free Shop",
+    "city": "PARATICO",
+    "folder": "MissMaisGlutenFreeShop",
+    "description": "Apre nel 2021 a Paratico, punto di riferimento per chi soffre di celiachia o altre intolleranze alimentari. La titolare, Savina Lazzaroni, ha vissuto in prima persona le difficoltà della dieta senza glutine e offre soluzioni sicure e gustose.",
+    "address": "Via Mazzini, 1/Q, 25030 Paratico BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  }
+]
