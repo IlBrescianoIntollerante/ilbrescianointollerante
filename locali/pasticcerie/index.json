@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Pasticceria Decca",
+    "city": "CASTENEDOLO",
+    "folder": "PasticceriaDecca",
+    "description": "A fianco di torte classiche come pandispagna e meringate, abbiamo inserito ciò che più ci rappresenta: torte moderne, monoporzioni, prodotti a tema per le festività e molto altro. Grande importanza ha anche la parte salata, con cui Luca dà sfogo al suo talento. Laboratorio piccolo ma pieno di energia e idee, materie prime di massimo livello e uno staff fondamentale per la crescita costante.",
+    "address": "Via Giacomo Matteotti, 82, 25014 Castenedolo BS",
+    "adesione": "Febbraio 2026",
+    "images": 5
+  },
+  {
+    "name": "Dolcidea Di Rossi Luigi",
+    "city": "RUDIANO",
+    "folder": "DolcideaDiRossiLuigi",
+    "description": "Grande rispetto e amore per la tradizione dolciaria italiana e locale, rivisitata in chiave moderna e attenta. L'obiettivo è sorprendere il cliente nel gusto e nella presentazione.",
+    "address": "Corso Aldo Moro, 108, 25030 Rudiano BS",
+    "adesione": "Febbraio 2026",
+    "images": 3
+  },
+  {
+    "name": "Pasticceria San Paolo",
+    "city": "SAREZZO",
+    "folder": "PasticceriaSanPaolo",
+    "description": "Punto di riferimento a Sarezzo per dolci artigianali, gelato senza conservanti, aperitivi di qualità e catering su misura. Ambienti accoglienti, ingredienti selezionati e lunga tradizione familiare. Aperitivi con selezioni ricercate, taglieri curati e drink preparati con passione.",
+    "address": "Via F. Petrarca, 159, 25068 Sarezzo BS",
+    "adesione": "Febbraio 2026",
+    "images": 5
+  },
+  {
+    "name": "VANILLA BISCOTTI",
+    "city": "PALAZZOLO SULL'OGLIO",
+    "folder": "VanillaBiscotti",
+    "description": "Barbara ha seguito il suo sogno di creare una biscotteria speciale: biscotti artigianali, torte, panettoni e colombe artigianali. Dal 2019 anche fragranze e profumi della sala al primo piano.",
+    "address": "Piazza Roma, 16/a, 25036 Palazzolo sull'Oglio BS",
+    "adesione": "Febbraio 2026",
+    "images": 6
+  },
+  {
+    "name": "Pasticceria Panigara",
+    "city": "BRESCIA",
+    "folder": "PasticceriaPanigara",
+    "description": "Da oltre 20 anni produce artigianalmente pasticceria, brioches, salatini e torte per eventi speciali. Durante le festività propone dolci tradizionali come panettoni, bossolà, colombe, uova di Pasqua, chiacchiere e frittelle ripiene.",
+    "address": "Via della Chiesa, 104, 25127 Brescia BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "MAGICABULA",
+    "city": "VILLA CARCINA",
+    "folder": "Magicabula",
+    "description": "Coming soon...",
+    "address": "Piazza XX Settembre, 3, 25069 Villa Carcina BS",
+    "adesione": "Febbraio 2026",
+    "images": 6
+  },
+  {
+    "name": "Delizia Bistrot",
+    "city": "ROVATO",
+    "folder": "DeliziaBistrotRovato",
+    "description": "Unisce l'arte della pasticceria tradizionale con l'energia di un bistrot contemporaneo. Prodotti senza lattosio, materie prime selezionate, freschezza e passione, per trasformare ogni momento in piccole grandi delizie.",
+    "address": "Via 25 Aprile, 239/d, 25038 Rovato BS",
+    "adesione": "Febbraio 2026",
+    "images": 4
+  },
+  {
+    "name": "Delizia Bistrot",
+    "city": "COCCAGLIO",
+    "folder": "DeliziaBistrotCoccaglio",
+    "description": "Unisce l'arte della pasticceria tradizionale con l'energia di un bistrot contemporaneo. Prodotti senza lattosio, materie prime selezionate, freschezza e passione, per trasformare ogni momento in piccole grandi delizie.",
+    "address": "Viale Giacomo Matteotti, 4, Coccaglio BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "ONGER PASTICCERIA",
+    "city": "BRESCIA",
+    "folder": "OngerPasticceria",
+    "description": "Creazioni dolciarie con ingredienti selezionati, dolci senza glutine, senza lattosio e vegani, unendo tradizione e modernità per un'esperienza unica.",
+    "address": "Via Giovanni Lipella, 4 b/c, 25128 Brescia BS",
+    "adesione": "Febbraio 2026",
+    "images": 4
+  },
+  {
+    "name": "GELATO CAMUNO e LE CHICCHE gluten free",
+    "city": "PIAMBORNO",
+    "folder": "GelatoCamunoLeChicche",
+    "description": "Coming soon...",
+    "address": "Via Nazionale, 63, 25052 Piamborno BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "Pasticceria San Marco",
+    "city": "CONCESIO",
+    "folder": "PasticceriaSanMarco",
+    "description": "Coming soon...",
+    "address": "Via Guglielmo Marconi, 17, 25062 Concesio BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "BINOMIO LAB",
+    "city": "GHEDI",
+    "folder": "BinomioLab",
+    "description": "Coming soon...",
+    "address": "Via Repubblica, 5, 25016 Ghedi BS",
+    "adesione": "Febbraio 2026",
+    "images": 4
+  },
+  {
+    "name": "Zero&Zero",
+    "city": "BRESCIA",
+    "folder": "ZeroZeroBrescia",
+    "description": "Nato nell'aprile 2012 per creare un luogo con prodotti adatti a chi soffre di intolleranze al latte e celiachia, con ampia scelta e qualità.",
+    "address": "Via Dante, 7, 25122 Brescia BS",
+    "adesione": "Gennaio 2026",
+    "images": 1
+  },
+  {
+    "name": "Zero&Zero",
+    "city": "GAVARDO",
+    "folder": "ZeroZeroGavardo",
+    "description": "Nato nell'aprile 2012 per creare un luogo con prodotti adatti a chi soffre di intolleranze al latte e celiachia, con ampia scelta e qualità.",
+    "address": "Via Giovanni Quarena, 210, 25085 Gavardo BS",
+    "adesione": "Gennaio 2026",
+    "images": 1
+  },
+  {
+    "name": "Lady Vaniglia & Miss Cioccolato",
+    "city": "FLERO",
+    "folder": "LadyVanigliaMissCioccolato",
+    "description": "Coming soon...",
+    "address": "Via S. Desiderio, 5, 25020 Flero BS",
+    "adesione": "Gennaio 2026",
+    "images": 1
+  },
+  {
+    "name": "PASTICCERIA FIORE",
+    "city": "PONCARALE",
+    "folder": "PasticceriaFiore",
+    "description": "Coming soon...",
+    "address": "Via XXV Aprile, 4, 25020 Poncarale BS",
+    "adesione": "Gennaio 2026",
+    "images": 2
+  }
+]
