@@ -87,21 +87,24 @@ async function loadCategory(category){
                     </div>
                 </div>
 
-                <div class="locale-carousel">
-                    <div class="carousel">
-                        <img src="locali/${category}/${locale.folder}/1.jpg">
-                    </div>
-                </div>
+				<div class="locale-carousel">
+					<div class="carousel">
+						<button class="carousel-btn prev">‹</button>
+						<img src="locali/${category}/${locale.folder}/1.jpg">
+						<button class="carousel-btn next">›</button>
+					</div>
+				</div>
             `;
 
             dynamic.appendChild(tile);
 
-            enableSwipe(
-                tile.querySelector("img"),
-                category,
-                locale.folder,
-                locale.images
-            );
+			enableSwipe(
+				tile.querySelector("img"),
+				category,
+				locale.folder,
+				locale.images,
+				tile.querySelector(".carousel")
+			);
 
         });
 
@@ -116,26 +119,27 @@ async function loadCategory(category){
 // SWIPE DINAMICO
 // =============================
 
-function enableSwipe(img, category, folder, totalImages){
+function enableSwipe(img, category, folder, totalImages, container){
 
     let index = 1;
-    let startX = 0;
 
-    img.addEventListener("touchstart", e=>{
-        startX = e.touches[0].clientX;
+    const prevBtn = container.querySelector(".prev");
+    const nextBtn = container.querySelector(".next");
+
+    function updateImage(){
+        img.src = `locali/${category}/${folder}/${index}.jpg`;
+    }
+
+    prevBtn.addEventListener("click", () => {
+        index--;
+        if(index < 1) index = totalImages;
+        updateImage();
     });
 
-    img.addEventListener("touchend", e=>{
-
-        let diff = e.changedTouches[0].clientX - startX;
-
-        if(diff > 50) index--;
-        if(diff < -50) index++;
-
-        if(index < 1) index = totalImages;
+    nextBtn.addEventListener("click", () => {
+        index++;
         if(index > totalImages) index = 1;
-
-        img.src = `locali/${category}/${folder}/${index}.jpg`;
+        updateImage();
     });
 }
 
