@@ -1,0 +1,18 @@
+[
+  {
+    "name": "CONO LOCO",
+    "city": "DESENZANO DEL GARDA",
+    "folder": "ConoLoco",
+    "description": "Gelato artigianale nato da un’idea pazza e tanta passione.",
+    "address": "Via Roma, 24, 25015 Desenzano del Garda BS",
+    "images": 5
+  },
+  {
+    "name": "GELATO TOP",
+    "city": "BRESCIA",
+    "folder": "GelatoTop",
+    "description": "Solo ingredienti selezionati.",
+    "address": "Via Milano, 10, Brescia",
+    "images": 3
+  }
+]

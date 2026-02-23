@@ -1,4 +1,6 @@
-// REVEAL
+// =============================
+// REVEAL ANIMATION
+// =============================
 const observer = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting){
@@ -11,108 +13,162 @@ document.querySelectorAll(".reveal")
 .forEach(el=>observer.observe(el));
 
 
-// DATI
-const data={
-gelaterie:[
-{
-name:"CONO LOCO",
-city:"DESENZANO DEL GARDA",
-folder:"ConoLoco",
-description:"Gelato artigianale nato da un’idea pazza e tanta passione.",
-address:"Via Roma, 24, 25015 Desenzano del Garda BS"
-}
-]
-};
+// =============================
+// DINAMIC LOCALES SYSTEM
+// =============================
 
-const dynamic=document.getElementById("dynamic-section");
-let current=null;
+const dynamic = document.getElementById("dynamic-section");
+let current = null;
 
 document.querySelectorAll(".btn-circle")
 .forEach(btn=>{
-btn.addEventListener("click",()=>{
-const cat=btn.dataset.cat;
+    btn.addEventListener("click", async () => {
 
-if(current===cat){
-dynamic.innerHTML="";
-dynamic.classList.remove("dynamic-active");
-btn.classList.remove("active");
-current=null;
-return;
+        const cat = btn.dataset.cat;
+
+        if(current === cat){
+            closeSection();
+            return;
+        }
+
+        document.querySelectorAll(".btn-circle")
+        .forEach(b=>b.classList.remove("active"));
+
+        btn.classList.add("active");
+        current = cat;
+
+        await loadCategory(cat);
+    });
+});
+
+
+function closeSection(){
+    dynamic.innerHTML = "";
+    dynamic.classList.remove("dynamic-active");
+    document.querySelectorAll(".btn-circle")
+    .forEach(b=>b.classList.remove("active"));
+    current = null;
 }
 
-document.querySelectorAll(".btn-circle")
-.forEach(b=>b.classList.remove("active"));
 
-btn.classList.add("active");
-current=cat;
-loadCategory(cat);
-});
-});
+// =============================
+// LOAD CATEGORY FROM JSON
+// =============================
 
-function loadCategory(cat){
-dynamic.innerHTML="";
-dynamic.classList.add("dynamic-active");
+async function loadCategory(category){
 
-if(!data[cat]) return;
+    dynamic.innerHTML = "";
+    dynamic.classList.add("dynamic-active");
 
-data[cat].forEach(locale=>{
-const tile=document.createElement("div");
-tile.className="locale-tile";
+    try {
 
-tile.innerHTML=`
-<div class="locale-text">
-<h2 style="font-family:Oswald;font-size:22px;">
-🍦 ${locale.name} <span style="font-size:14px;">(${locale.city})</span>
-</h2>
-<p style="margin:15px 0;">${locale.description}</p>
-<p style="font-size:13px;">📍 ${locale.address}</p>
-</div>
+        const response = await fetch(`locali/${category}/index.json`);
+        const locales = await response.json();
 
-<div class="locale-carousel">
-<div class="carousel">
-<img src="locali/${locale.folder}/1.jpg">
-</div>
-</div>
-`;
+        locales.forEach(locale => {
 
-dynamic.appendChild(tile);
+            const tile = document.createElement("div");
+            tile.className = "locale-tile";
 
-enableSwipe(tile.querySelector("img"),locale.folder);
-});
+            tile.innerHTML = `
+                <div class="locale-text">
+                    <h2 style="font-family:Oswald;font-size:22px;">
+                        ${getIcon(category)} ${locale.name}
+                        <span style="font-size:14px;">(${locale.city})</span>
+                    </h2>
+
+                    <p style="margin:15px 0;">${locale.description}</p>
+                    <p style="font-size:13px;">📍 ${locale.address}</p>
+
+                    <div class="locale-map">
+                        <iframe 
+                        src="https://www.google.com/maps?q=${encodeURIComponent(locale.address)}&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="locale-carousel">
+                    <div class="carousel">
+                        <img src="locali/${category}/${locale.folder}/1.jpg">
+                    </div>
+                </div>
+            `;
+
+            dynamic.appendChild(tile);
+
+            enableSwipe(
+                tile.querySelector("img"),
+                category,
+                locale.folder,
+                locale.images
+            );
+
+        });
+
+    } catch(error) {
+        dynamic.innerHTML = "<p>Nessun locale trovato.</p>";
+        console.error(error);
+    }
 }
 
-// SWIPE
-function enableSwipe(img,folder){
-let index=1;
-let startX=0;
 
-img.addEventListener("touchstart",e=>{
-startX=e.touches[0].clientX;
-});
+// =============================
+// SWIPE DINAMICO
+// =============================
 
-img.addEventListener("touchend",e=>{
-let diff=e.changedTouches[0].clientX-startX;
+function enableSwipe(img, category, folder, totalImages){
 
-if(diff>50) index--;
-if(diff<-50) index++;
+    let index = 1;
+    let startX = 0;
 
-if(index<1) index=5;
-if(index>5) index=1;
+    img.addEventListener("touchstart", e=>{
+        startX = e.touches[0].clientX;
+    });
 
-img.src=`locali/${folder}/${index}.jpg`;
-});
+    img.addEventListener("touchend", e=>{
+
+        let diff = e.changedTouches[0].clientX - startX;
+
+        if(diff > 50) index--;
+        if(diff < -50) index++;
+
+        if(index < 1) index = totalImages;
+        if(index > totalImages) index = 1;
+
+        img.src = `locali/${category}/${folder}/${index}.jpg`;
+    });
 }
 
+
+// =============================
+// ICONS PER CATEGORIA
+// =============================
+
+function getIcon(category){
+    switch(category){
+        case "gelaterie": return "🍦";
+        case "ristoranti": return "🍽️";
+        case "shops": return "🛍️";
+        case "pasticcerie": return "🧁";
+        default: return "";
+    }
+}
+
+
+// =============================
 // NAVIGATION
+// =============================
+
 function scrollToTop(){
-window.scrollTo({top:0,behavior:"smooth"});
+    window.scrollTo({top:0,behavior:"smooth"});
 }
 
 function scrollToMap(){
-document.querySelector(".map-section")
-.scrollIntoView({behavior:"smooth"});
+    document.querySelector(".map-section")
+    .scrollIntoView({behavior:"smooth"});
 }
 
 function scrollToBot(){
-alert("Colleghiamo il bot dopo 😉");
+    document.querySelector(".telegram-section")
+    .scrollIntoView({behavior:"smooth"});
 }
