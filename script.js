@@ -79,7 +79,8 @@ async function loadCategory(category){
 
                     <p style="margin:15px 0;">${locale.description}</p>
                     <p style="font-size:13px;">📍 ${locale.address}</p>
-
+					<p style="font-size:13px;">📅 Data Adesione: ${locale.adesione}</p>
+					
                     <div class="locale-map">
                         <iframe 
                         src="https://www.google.com/maps?q=${encodeURIComponent(locale.address)}&output=embed">
