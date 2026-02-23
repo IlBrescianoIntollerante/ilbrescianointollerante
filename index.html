@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Il Bresciano Intollerante</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Oswald:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1c4587">
+<link rel="apple-touch-icon" href="loghi/icon-192.png">
+</head>
+
+<body>
+
+<header class="navbar">
+    <img src="loghi/logo.jpg" class="nav-logo">
+</header>
+
+<div class="app-container">
+
+<!-- HERO -->
+<section class="hero reveal">
+    <div class="hero-left">
+        <h1 class="hero-title">CIAO, MI CHIAMO DANIELE</h1>
+        <p class="hero-sub">
+            Sono intollerante al lattosio e vengo da Brescia.
+        </p>
+        <p class="hero-blue">
+            Se sei intollerante al lattosio e ti trovi in provincia di Brescia allora sei capitato nella pagina giusta.
+        </p>
+        <p class="hero-quote">
+            "Il bresciano intollerante non deve rispecchiare una persona ma un gruppo di persone."
+        </p>
+    </div>
+
+    <div class="hero-right">
+        <img src="loghi/logo.jpg">
+    </div>
+</section>
+
+<!-- MAPPA -->
+<section class="map-section reveal">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1z1Z8qFqzeOD0g4hMviq_UZ1vN-uI74c"></iframe>
+
+    <h3 class="select-title">SELEZIONA PER LOCALE</h3>
+
+    <div class="categorie">
+        <button data-cat="ristoranti" class="btn-circle">🍽️</button>
+        <button data-cat="shops" class="btn-circle">🛍️</button>
+        <button data-cat="gelaterie" class="btn-circle">🍦</button>
+        <button data-cat="pasticcerie" class="btn-circle">🧁</button>
+    </div>
+</section>
+
+<section id="dynamic-section"></section>
+
+</div>
+
+<!-- BOTTOM NAV MOBILE -->
+<nav class="bottom-nav">
+    <button onclick="scrollToTop()">Home</button>
+    <button onclick="scrollToMap()">Mappa</button>
+    <button onclick="scrollToBot()">Bot</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
