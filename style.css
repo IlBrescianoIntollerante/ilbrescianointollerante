@@ -122,6 +122,36 @@ iframe{
     margin:25px 0 15px;
 }
 
+/* DIVISIONE */
+.divider-fancy {
+    height: 4px;
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto; /* centra e distanzia */
+    border-radius: 2px;
+    background: linear-gradient(90deg, #007BFF, #00D4FF);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.divider-fancy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,0));
+    animation: slide 2s infinite;
+}
+
+@keyframes slide {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
+}
+
 /* BOTTONI */
 .categorie{
     display:flex;
