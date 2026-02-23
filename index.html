@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Il Bresciano Intollerante</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Oswald:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Oswald:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-<!-- MANIFEST -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1c4587">
 <link rel="apple-touch-icon" href="loghi/icon-192.png">
@@ -25,10 +24,7 @@
 <!-- HERO -->
 <section class="hero reveal">
     <div class="hero-left">
-        <h1 class="hero-title">CIAO, MI CHIAMO DANIELE</h1>
-        <p class="hero-sub">
-            Sono intollerante al lattosio e vengo da Brescia.
-        </p>
+        <h1 class="hero-title">CIAO, MI CHIAMO DANIELE, SONO INTOLLERANTE AL LATTOSIO E VENGO DA BRESCIA</h1>
         <p class="hero-blue">
             Se sei intollerante al lattosio e ti trovi in provincia di Brescia allora sei capitato nella pagina giusta.
         </p>
@@ -39,6 +35,33 @@
 
     <div class="hero-right">
         <img src="loghi/logo.jpg">
+    </div>
+</section>
+
+<!-- STICKER -->
+<section class="hero reveal">
+    <div class="hero-right">
+        <img src="loghi/LattosioFriendly.png">
+        <p class="hero-text-mini">
+			*** Il Bresciano Intollerante non certifica, non controlla e non garantisce l’assenza di lattosio nei piatti. Ogni locale resta responsabile delle proprie preparazioni e ogni persona resta responsabile delle proprie scelte alimentari. Questo progetto nasce per favorire il dialogo, non per sostituirlo. Questo simbolo indica che il locale è attento e disponibile al dialogo sulle esigenze legate all’intolleranza al lattosio: 👉 Non è una certificazione 👉 Non è una garanzia medica 👉 Non sostituisce il dialogo con il personale del locale ***
+        </p>
+    </div>
+
+    <div class="hero-left">
+        <h2 class="hero-title">COS’È QUESTO STICKER?</h2>
+        <p class="hero-text">
+			Trovare un posto dove mangiare dovrebbe essere semplice, ma per chi è intollerante al lattosio spesso diventa una piccola missione: scegliere dove andare, controllare ogni piatto, temere di stare male… e desiderare solo di sentirsi “normale”.
+			<br>
+			Ho creato questo sticker con un obiettivo molto semplice: aiutare le persone.
+			<br>
+			Viviamo in un’epoca in cui, grazie soprattutto ai social, è facile trovare consigli su dove mangiare, ma quando si ha un’intolleranza al lattosio la domanda è sempre la stessa: quanto posso davvero fidarmi?
+			<br>
+			Questo sticker nasce per distinguere i locali che non si limitano a “promettere”, ma che si mostrano disponibili al dialogo, consapevoli dell’importanza di questa esigenza.
+			<br>
+			Non è una certificazione e non è una garanzia assoluta, ma un segnale di attenzione reale: qui puoi chiedere, parlare, confrontarti e sentirti ascoltato.
+			<br>
+			Questo simbolo vuole offrire un po’ più di tranquillità a chi, come me, ogni giorno deve fare attenzione a ciò che mangia.
+        </p>
     </div>
 </section>
 
@@ -58,6 +81,37 @@
 
 <section id="dynamic-section"></section>
 
+<!-- TELEGRAM -->
+<section class="telegram-section reveal">
+    <h2>HAI VISIONATO IL MIO BOT 🤖 SU TELEGRAM?</h2>
+    <p>Ti permette di cercare locali in tutta Brescia che offrono prodotti senza lattosio.</p>
+    <a href="http://t.me/IlBrescianoIntolleranteBot" target="_blank" class="telegram-btn">
+        Fammi cercare qualche locale
+    </a>
+</section>
+
+<!-- SOCIAL -->
+<section class="social reveal">
+    <p>
+        Per aggiornamenti, collaborazioni o contatti, seguimi sui miei canali social
+        o inviami una mail. Sarò felice di risponderti.
+    </p>
+
+    <div class="social-links">
+        <a href="#" class="social-circle">
+            <svg viewBox="0 0 24 24"><path fill="white" d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6-1a1 1 0 110 2 1 1 0 010-2z"/></svg>
+        </a>
+
+        <a href="#" class="social-circle">
+            <svg viewBox="0 0 24 24"><path fill="white" d="M22 12a10 10 0 10-11.6 9.9v-7H8v-3h2.4V9.4c0-2.4 1.4-3.8 3.6-3.8 1 0 2 .2 2 .2v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H17l-.4 3h-2.9v7A10 10 0 0022 12z"/></svg>
+        </a>
+
+        <a href="mailto:ilbrescianointollerante@gmail.com" class="social-circle">
+            ✉
+        </a>
+    </div>
+</section>
+
 </div>
 
 <!-- BOTTOM NAV MOBILE -->
@@ -67,42 +121,7 @@
     <button onclick="scrollToBot()">Bot</button>
 </nav>
 
-<!-- BOTTONE INSTALLAZIONE -->
-<button id="addToHome" style="display:none; position:fixed; bottom:90px; left:50%; transform:translateX(-50%); padding:12px 20px; background:#1c4587; color:white; border:none; border-radius:25px; font-weight:bold; z-index:999;">
-Scarica e aggiungi alla home
-</button>
-
 <script src="script.js"></script>
-
-<!-- SERVICE WORKER REGISTRATION -->
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js')
-    .then(() => console.log('Service Worker registrato'))
-    .catch(err => console.log('Errore SW', err));
-}
-
-let deferredPrompt;
-const addBtn = document.getElementById("addToHome");
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  addBtn.style.display = "block";
-});
-
-addBtn.addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    if (outcome === 'accepted') {
-      console.log("App installata");
-    }
-    deferredPrompt = null;
-    addBtn.style.display = "none";
-  }
-});
-</script>
 
 </body>
 </html>

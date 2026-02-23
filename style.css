@@ -56,14 +56,16 @@ body{
     font-family:'Oswald';
     font-weight:400;
     font-size:42px;
-    white-space:nowrap;
+    /*white-space:nowrap;*/
 }
 
+/*
 .hero-sub{
     font-family:'Oswald';
-    font-size:22px;
-    margin:15px 0;
+    font-weight:400;
+    font-size:42px;
 }
+*/
 
 .hero-blue{
     color:var(--blue);
@@ -75,6 +77,22 @@ body{
     font-family:'Pacifico';
     font-size:18px;
     color:var(--blue);
+}
+
+.hero-text{
+    font-family:'Comfortaa', sans-serif;
+    font-weight:300;   /* QUESTO è il light */
+    font-size:18px;
+    text-align:justify;
+	line-height:1.45;
+    color:var(--black);
+}
+
+.hero-text-mini{
+    font-family:'Oswald';
+    font-size:10px;
+	text-align:justify;
+    color:var(--black);
 }
 
 /* MAPPA */
@@ -182,6 +200,53 @@ iframe{
     font-family:'Oswald';
     font-size:14px;
 }
+
+/* TELEGRAM */
+.telegram-section {
+    padding:100px 0;
+    text-align:center;
+    background:#f4f6fb;
+}
+
+.telegram-btn {
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 35px;
+    background:var(--blue);
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+/* SOCIAL */
+.social {
+    padding:80px 0;
+    text-align:center;
+}
+
+.social-links {
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social-circle {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:20px;
+    color:white;
+}
+
+.social-circle:hover { transform:scale(1.1); }
+
+.social-circle svg { width:22px; }
 
 /* ANIMAZIONI */
 .reveal{
