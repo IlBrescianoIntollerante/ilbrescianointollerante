@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Oswald:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
+<!-- MANIFEST -->
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1c4587">
 <link rel="apple-touch-icon" href="loghi/icon-192.png">
@@ -66,29 +67,42 @@
     <button onclick="scrollToBot()">Bot</button>
 </nav>
 
+<!-- BOTTONE INSTALLAZIONE -->
+<button id="addToHome" style="display:none; position:fixed; bottom:90px; left:50%; transform:translateX(-50%); padding:12px 20px; background:#1c4587; color:white; border:none; border-radius:25px; font-weight:bold; z-index:999;">
+Scarica e aggiungi alla home
+</button>
+
 <script src="script.js"></script>
-    <button id="addToHome">Scarica e aggiungi alla home</button>
+
+<!-- SERVICE WORKER REGISTRATION -->
 <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('Service Worker registrato'))
+    .catch(err => console.log('Errore SW', err));
+}
+
 let deferredPrompt;
+const addBtn = document.getElementById("addToHome");
 
 window.addEventListener('beforeinstallprompt', (e) => {
-  // Previeni il prompt automatico
   e.preventDefault();
   deferredPrompt = e;
-  document.getElementById('addToHome').style.display = 'block';
+  addBtn.style.display = "block";
 });
 
-document.getElementById('addToHome').addEventListener('click', async () => {
+addBtn.addEventListener('click', async () => {
   if (deferredPrompt) {
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
     if (outcome === 'accepted') {
-      console.log('L\'utente ha aggiunto alla home!');
+      console.log("App installata");
     }
     deferredPrompt = null;
+    addBtn.style.display = "none";
   }
 });
 </script>
-</body>
 
+</body>
 </html>
