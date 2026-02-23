@@ -1,0 +1,74 @@
+[
+  {
+    "name": "AROMA",
+    "city": "BRESCIA",
+    "folder": "Aroma",
+    "description": "Cucina tra tradizione e innovazione, valorizzando le ricette classiche reinterpretate con creatività. I giovani chef Marco e Stefano esprimono passione con abbinamenti sempre nuovi e ricercati. Impegno nella sostenibilità e nel rispetto dell'ambiente in tutte le fasi, dalla scelta degli ingredienti alla presentazione dei piatti.",
+    "address": "Via Trieste, 56 b, 25121 Brescia BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "La Pinseria",
+    "city": "BRESCIA",
+    "folder": "LaPinseria",
+    "description": "Finalmente a Brescia la vera Pinsa Romana, in pieno centro storico, vicino a Piazza Loggia, anche senza lattosio e senza glutine.",
+    "address": "Via S. Faustino, 9D, 25122 Brescia BS",
+    "adesione": "Febbraio 2026",
+    "images": 4
+  },
+  {
+    "name": "Mipiace - Pizzeria",
+    "city": "CAPRIANO DEL COLLE",
+    "folder": "MipiacePizzeria",
+    "description": "Coming soon...",
+    "address": "Via Trento, 136, 25020 Capriano del Colle BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "Mon Petit Bistrot",
+    "city": "BRESCIA",
+    "folder": "MonPetitBistrot",
+    "description": "Nato nel 2014, un bistrot con un’anima propria dove cucina e vino sono una sorpresa continua. Spazio piccolo ma capace di mescolare influenze, stili e sapori con naturalezza.",
+    "address": "Piazza del Vescovato, 1b, 25121 Brescia BS",
+    "adesione": "Febbraio 2026",
+    "images": 3
+  },
+  {
+    "name": "Agriturismo La Ruer Verda",
+    "city": "BRIONE",
+    "folder": "AgriturismoLaRuerVerda",
+    "description": "Azienda agricola familiare, valorizza e vende direttamente i propri prodotti. Allevamento bovini, api e animali da cortile. Immersa nel verde, con vista sulla pianura padana e parte della Franciacorta, fino al Monte Rosa nelle giornate limpide.",
+    "address": "Via Cugno, 14, 25060 Brione BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "Pizzeria La Maiolica",
+    "city": "TRENZANO",
+    "folder": "PizzeriaLaMaiolica",
+    "description": "Coming soon...",
+    "address": "Via Marconi 11a 25030 Cossirano, Trenzano BS",
+    "adesione": "Febbraio 2026",
+    "images": 5
+  },
+  {
+    "name": "Lo scrigno di katja",
+    "city": "GUSSAGO",
+    "folder": "LoScrignoDiKatja",
+    "description": "Locale multifunzione: spesa quotidiana, pane fresco, pasticceria, torte, colazione, merenda, pranzo, cena, aperitivo e pizza da asporto. Area giochi per bambini e ambiente accogliente, dove ogni cliente può sentirsi a casa senza preoccupazioni alimentari.",
+    "address": "Via Milano, 66, 25064 Gussago BS",
+    "adesione": "Febbraio 2026",
+    "images": 1
+  },
+  {
+    "name": "La fermata del tram",
+    "city": "BRESCIA",
+    "folder": "LaFermataDelTram",
+    "description": "Coming soon...",
+    "address": "Via S. Faustino, 2, 25122 Brescia BS",
+    "adesione": "Gennaio 2026",
+    "images": 3
+  }
+]
