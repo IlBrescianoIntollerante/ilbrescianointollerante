@@ -27,7 +27,7 @@
     "images": 5
   },
   {
-    "name": "VANILLA BISCOTTI",
+    "name": "Vanilla Biscotti",
     "city": "PALAZZOLO SULL'OGLIO",
     "folder": "VanillaBiscotti",
     "description": "Barbara ha seguito il suo sogno di creare una biscotteria speciale: biscotti artigianali, torte, panettoni e colombe artigianali. Dal 2019 anche fragranze e profumi della sala al primo piano.",
@@ -45,7 +45,7 @@
     "images": 1
   },
   {
-    "name": "MAGICABULA",
+    "name": "Magicabula",
     "city": "VILLA CARCINA",
     "folder": "Magicabula",
     "description": "Coming soon...",
@@ -72,7 +72,7 @@
     "images": 1
   },
   {
-    "name": "ONGER PASTICCERIA",
+    "name": "Onger Pasticceria",
     "city": "BRESCIA",
     "folder": "OngerPasticceria",
     "description": "Creazioni dolciarie con ingredienti selezionati, dolci senza glutine, senza lattosio e vegani, unendo tradizione e modernità per un'esperienza unica.",
@@ -81,7 +81,7 @@
     "images": 4
   },
   {
-    "name": "GELATO CAMUNO e LE CHICCHE gluten free",
+    "name": "Gelato Camuno e Le Chicche gluten free",
     "city": "PIAMBORNO",
     "folder": "GelatoCamunoLeChicche",
     "description": "Coming soon...",
@@ -99,7 +99,7 @@
     "images": 1
   },
   {
-    "name": "BINOMIO LAB",
+    "name": "Binomio Lab",
     "city": "GHEDI",
     "folder": "BinomioLab",
     "description": "Coming soon...",
@@ -108,7 +108,7 @@
     "images": 4
   },
   {
-    "name": "Zero&Zero",
+    "name": "Zero & Zero",
     "city": "BRESCIA",
     "folder": "ZeroZeroBrescia",
     "description": "Nato nell'aprile 2012 per creare un luogo con prodotti adatti a chi soffre di intolleranze al latte e celiachia, con ampia scelta e qualità.",
@@ -117,7 +117,7 @@
     "images": 1
   },
   {
-    "name": "Zero&Zero",
+    "name": "Zero & Zero",
     "city": "GAVARDO",
     "folder": "ZeroZeroGavardo",
     "description": "Nato nell'aprile 2012 per creare un luogo con prodotti adatti a chi soffre di intolleranze al latte e celiachia, con ampia scelta e qualità.",
@@ -135,7 +135,7 @@
     "images": 1
   },
   {
-    "name": "PASTICCERIA FIORE",
+    "name": "Pasticceria Fiore",
     "city": "PONCARALE",
     "folder": "PasticceriaFiore",
     "description": "Coming soon...",
