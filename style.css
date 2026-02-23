@@ -1,5 +1,6 @@
 :root {
     --blue:#1c4587;
+	--black: #111;
     --max-width:1100px;
 }
 
@@ -103,9 +104,16 @@ body{
 
 iframe{
     width:100%;
-    height:400px;
+    height:200px;
     border:none;
     border-radius:20px;
+}
+
+.locale-map iframe{
+    width:100%;
+    height:160px;
+    border:none;
+    border-radius:15px;
 }
 
 .select-title{
@@ -159,8 +167,16 @@ iframe{
 .locale-tile{
     display:flex;
     gap:30px;
-    padding:30px 0;
-    border-bottom:1px solid #eee;
+    padding:40px;
+    margin-bottom:40px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.locale-tile:hover{
+    transform:translateY(-5px);
 }
 
 .locale-text{flex:2;}
@@ -306,4 +322,64 @@ iframe{
     padding-bottom:120px;
 }
 
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media(max-width:900px){
+
+/* HERO */
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:25px;
+}
+
+.hero-right img{
+    max-width:65%;
+}
+
+/* MAPPA */
+iframe{
+    height:240px;
+}
+
+/* LOCALE CARD MOBILE */
+.locale-tile{
+    flex-direction:column;
+    padding:25px;
+}
+
+.locale-carousel{
+    order:-1; /* immagine sopra */
+    width:100%;
+}
+
+.carousel{
+    width:100%;
+}
+
+.locale-text{
+    width:100%;
+}
+
+.locale-text h2{
+    font-size:20px !important;
+}
+
+.locale-text p{
+    font-size:14px !important;
+}
+
+/* più separazione tra card */
+.locale-tile + .locale-tile{
+    margin-top:30px;
+}
+
+}
+
+.locale-tile:nth-child(even){
+    background:#f7f9ff;
 }
