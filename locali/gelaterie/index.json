@@ -6,7 +6,7 @@
     "description": "Lorenzo: Mi piacerebbe aprire una gelateria… Chiara: ma dai? che figata! Potevamo propinarvi le solite favolette del sogno nel cassetto ma Cono Loco in realtà è nata esattamente così! Da un’idea un po’ pazza e dalla completa fiducia di una compagna straordinaria.. Il nostro unico scopo è realizzare un gelato eccezionale… e divertirci mentre lo facciamo!",
     "address": "Via Roma, 24, 25015 Desenzano del Garda BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 1
   },
   {
     "name": "Gelateria Francis",
@@ -20,11 +20,11 @@
   {
     "name": "Gelateria L’altro Igloo",
     "city": "CORTE FRANCA",
-    "folder": "AltroIgloo",
+    "folder": "GelateriaAltroIgloo",
     "description": "Coming soon...",
     "address": "Via Roma, 77e, 25040 Corte Franca BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 1
   },
   {
     "name": "Gelateria Tosoni",
@@ -33,7 +33,7 @@
     "description": "Coming soon...",
     "address": "Viale Brescia, 79/a, 25080 Molinetto BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 1
   },
   {
     "name": "Gelateria Marameo",
@@ -42,7 +42,7 @@
     "description": "Nasce nel 1991 a Dello, in provincia di Brescia, dalla passione della famiglia Ferrari per l'arte gelatiera tradizionale italiana. Da oltre 30 anni, la nostra missione è offrire gelato artigianale di eccellenza con ingredienti selezionati come Pistacchio di Bronte DOP, Nocciola Giffoni IGP e Mandorla di Avola.",
     "address": "Via Roma, 51, 25020 Dello BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 3
   },
   {
     "name": "Gelateria Creamy",
@@ -51,7 +51,7 @@
     "description": "Coming soon...",
     "address": "Viale Valtenesi, 11, 25080 Molinetto BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 1
   },
   {
     "name": "Cono o Coppetta di Michela Baldassari",
@@ -60,16 +60,16 @@
     "description": "Coming soon...",
     "address": "Via Trento, 37, 25020 Capriano del Colle BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 3
   },
   {
     "name": "1° Gelateria Sottozero",
     "city": "RONCADELLE",
-    "folder": "Sottozero",
+    "folder": "GelateriaSottozero",
     "description": "Coming soon...",
     "address": "Via Guglielmo Marconi, 4, 25030 Roncadelle BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 1
   },
   {
     "name": "Il Gelato di Stefano",
@@ -78,6 +78,6 @@
     "description": "Coming soon...",
     "address": "Via Leonardo da Vinci, 98/100, 25086 Rezzato BS",
     "adesione": "Febbraio 2026",
-    "images": 5
+    "images": 3
   }
 ]
